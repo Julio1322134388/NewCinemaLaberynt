@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styleslide.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <img src="/images/Abstract-cinema-logo-vector-template-Graphics-19546476-1-580x386.png" alt="Logo de New Cinema Labyrinth">
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="quees.html">¿Qué es el Cine?</a></li>
+        <li><a href="Evolucion.html">Evolución</a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="edu.html">Educación</a></li>
+        <li><a href="concept.html">Conceptos</a></li>
+        <li><a href="centra.html">Centralización</a></li>
+        <li><a href="cult.html">Cultura</a></li>
+        <li><a href="recom.html">Recomendaciones</a></li>
+        <li><a href="mex.html">cine Méxicano</a></li>
+        <li><a href="anina.html">Animacion</a></li>
+        <!-- Agrega enlaces a otras páginas aquí -->
+      </ul>
+    </nav>
+  </header>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <h1>Recomendaciones</h1>
+ <div id="slider">
+  <a href="#" class="control_next">>></a>
+  <a href="#" class="control_prev"></a>
+  <ul>
+    <li style="background: url(/images/Et_MXTXWYAUxYyL.jpg); background-size: cover; background-position:center;min-width: 10vw; height: 65vh;"></li>
+    <li style="background: url(/images/Et_MXTXWYAUxYyL.jpg); background-size: cover; background-position:center;min-width: 10vw; height: 65vh;"></li>
+    <li style="background: url(/images/Et_MXTXWYAUxYyL.jpg); background-size: cover; background-position:center;min-width: 10vw; height: 65vh;"></li>
+    <li style="background: url(/images/Et_MXTXWYAUxYyL.jpg); background-size: cover; background-position:center;min-width: 10vw; height: 65vh;"></li>
+  </ul>  
+</div>
+
+<!-- <div class="slider_option">
+  <input type="checkbox" id="checkbox">
+  <label for="checkbox">Autoplay Slider</label>
+</div> 
+ -->
+<script src="script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>jQuery(document).ready(function ($) {
+
+  $('#checkbox').change(function(){
+    setInterval(function () {
+        moveRight();
+    }, 3000);
+  });
+  
+	var slideCount = $('#slider ul li').length;
+	var slideWidth = $('#slider ul li').width();
+	var slideHeight = $('#slider ul li').height();
+	var sliderUlWidth = slideCount * slideWidth;
+	
+	$('#slider').css({ width: slideWidth, height: slideHeight });
+	
+	$('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+	
+    $('#slider ul li:last-child').prependTo('#slider ul');
+
+    function moveLeft() {
+        $('#slider ul').animate({
+            left: + slideWidth
+        }, 200, function () {
+            $('#slider ul li:last-child').prependTo('#slider ul');
+            $('#slider ul').css('left', '');
+        });
+    };
+
+    function moveRight() {
+        $('#slider ul').animate({
+            left: - slideWidth
+        }, 200, function () {
+            $('#slider ul li:first-child').appendTo('#slider ul');
+            $('#slider ul').css('left', '');
+        });
+    };
+
+    $('a.control_prev').click(function () {
+        moveLeft();
+    });
+
+    $('a.control_next').click(function () {
+        moveRight();
+    });
+
+});  
+
+let prevScrollPos = window.pageYOffset;
+
+window.addEventListener('scroll', () => {
+  const currentScrollPos = window.pageYOffset;
+  const header = document.querySelector('header');
+
+  if (prevScrollPos > currentScrollPos) {
+    // El usuario está haciendo scroll hacia arriba, muestra el encabezado
+    header.style.top = "0"; // Muestra la barra de navegación
+  } else {
+    // El usuario está haciendo scroll hacia abajo, oculta el encabezado
+    header.style.top = "-80px"; // Oculta la barra de navegación (ajusta la altura según sea necesario)
+  }
+
+  prevScrollPos = currentScrollPos;
+});
+</script>
+
+</body>
+</html>

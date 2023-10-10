@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Cinema Labyrinth</title>
+  <link rel="stylesheet" href="styles2.css">
+  <style>
+    /* Estilos específicos para la página aquí */
+    /* Justificar el texto */
+    p {
+      text-align: justify;
+    }
+  </style>
+</head>
+<!-- JavaScript para ocultar la barra de navegación al hacer scroll down -->
+<script>
+  let prevScrollPos = window.pageYOffset;
+
+  window.addEventListener('scroll', () => {
+    const currentScrollPos = window.pageYOffset;
+    const header = document.querySelector('header');
+
+    if (prevScrollPos > currentScrollPos) {
+      // El usuario está haciendo scroll hacia arriba, muestra el encabezado
+      header.style.top = "0"; // Muestra la barra de navegación
+    } else {
+      // El usuario está haciendo scroll hacia abajo, oculta el encabezado
+      header.style.top = "-80px"; // Oculta la barra de navegación (ajusta la altura según sea necesario)
+    }
+
+    prevScrollPos = currentScrollPos;
+  });
+</script>
+
+<body>
+  <!-- Encabezado -->
+  <header>
+    <a href="index.html"><img src="/images/Abstract-cinema-logo-vector-template-Graphics-19546476-1-580x386.png" alt="Logo de New Cinema Labyrinth"></a>
+    <nav class="navbar">
+      <ul>
+        <li><a style="text-decoration: none;" href="index.html">Inicio</a></li>
+        <li><a style="text-decoration: none;" href="quees.html">¿Qué es el Cine?</a></li>
+        <li><a style="text-decoration: none;" href="Evolucion.html">Evolución</a></li>
+        <li><a style="text-decoration: none;" href="historia.html">Historia</a></li>
+        <li><a  style="text-decoration: none;"href="edu.html">Educación</a></li>
+        <li><a  style="text-decoration: none;"href="concept.html">Conceptos</a></li>
+        <li><a  style="text-decoration: none;"href="centra.html">Centralización</a></li>
+        <li><a  style="text-decoration: none;"href="cult.html">Cultura</a></li>
+        <li><a  style="text-decoration: none;"href="recom.html">Recomendaciones</a></li>
+        <li><a style="text-decoration: none;" href="mex.html">cine Méxicano</a></li>
+        <li><a style="text-decoration: none;" href="anina.html">Animacion</a></li>
+        <!-- Agregar enlaces a otras páginas aquí -->
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <div class="start">
+    <h1 style="font-size: xx-large;color: white;max-width: 800px;margin: 120px auto 0; padding: 20px 0 0;">¿Qué es el Cine?</h1>
+    <p style="font-size: xx-large;color: white;max-width: 800px;margin: 20px auto 0; padding: 20px 0;">El cine es una forma de expresión artística y un medio de entretenimiento que utiliza la combinación de imágenes en movimiento, sonido, música, diálogo y efectos visuales para contar historias, transmitir emociones, comunicar ideas o simplemente entretener al público. Se basa en la proyección secuencial de fotogramas o cuadros fijos a una velocidad suficientemente rápida (generalmente 24 o 30 cuadros por segundo) para crear la ilusión de movimiento continuo.
+    </p>
+    <img src="/images/cineevo.gif" alt="Imagen 1">
+    <br>
+    <p style="font-size: xx-large;color: white;max-width: 800px;margin: 20px auto 0; padding: 20px 0;">El cine abarca una amplia variedad de géneros, estilos y formas, desde películas de ficción hasta documentales, animaciones, películas experimentales y mucho más. Es una de las formas más influyentes de arte y entretenimiento en la cultura contemporánea, con una capacidad única para llegar a audiencias de todo el mundo y transmitir mensajes poderosos a través de la combinación de imágenes y sonido. El cine ha sido una parte fundamental de la industria del entretenimiento y la cultura popular durante más de un siglo.</p>
+    <!-- Agregar una imagen relacionada -->
+    <img src="/images/bg.jpg" alt="Imagen 1">
+  </div>
+
+  <!-- Pie de página -->
+  <footer>
+    <div style="text-align: center;" class="footer-content">
+      <p>© 2023 New Cinema Labyrinth. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>

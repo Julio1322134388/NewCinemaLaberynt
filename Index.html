@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Cinema Labyrinth</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Tus estilos específicos para la página de inicio aquí */
+  </style>
+</head>
+<script>
+  let prevScrollPos = window.pageYOffset;
+
+  window.addEventListener('scroll', () => {
+    const currentScrollPos = window.pageYOffset;
+    const header = document.querySelector('header');
+
+    if (prevScrollPos > currentScrollPos) {
+      // El usuario está haciendo scroll hacia arriba, muestra el encabezado
+      header.style.top = "0"; // Muestra la barra de navegación
+    } else {
+      // El usuario está haciendo scroll hacia abajo, oculta el encabezado
+      header.style.top = "-80px"; // Oculta la barra de navegación (ajusta la altura según sea necesario)
+    }
+
+    prevScrollPos = currentScrollPos;
+  });
+</script>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <img src="/images/Abstract-cinema-logo-vector-template-Graphics-19546476-1-580x386.png" alt="Logo de New Cinema Labyrinth">
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="quees.html">¿Qué es el Cine?</a></li>
+        <li><a href="Evolucion.html">Evolución</a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="edu.html">Educación</a></li>
+        <li><a href="concept.html">Conceptos</a></li>
+        <li><a href="centra.html">Centralización</a></li>
+        <li><a href="cult.html">Cultura</a></li>
+        <li><a href="recom.html">Recomendaciones</a></li>
+        <li><a href="mex.html">cine Méxicano</a></li>
+        <li><a href="anina.html">Animacion</a></li>
+        <!-- Agrega enlaces a otras páginas aquí -->
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <div class="start">
+    <h1 style="font-size: xx-large;color: white;max-width: 800px;margin: 120px auto 0; padding: 20px 0 0;text-align: center;">¡Para empezar!</h1>
+    
+    <p style="font-size: xx-large;color: white;max-width: 800px;margin: 20px auto 0; padding: 20px 0;text-align: center;">Hice este sitio web con el propósito de compartir la fuente constante de inspiración que me proporciona mi hermano menor, quien, día tras día, nutre su amor y pasión por el séptimo arte. Quise aprovechar esta inspiración como cimiento para acercar a un público más amplio al mundo de la cinematografía y fomentar un mayor aprecio por esta forma de arte. A través de este sitio, no solo pretendo brindar información sobre la cinematografía en sí, sino también explorar sus matices y secretos.</p>
+  
+    <a href="https://mubi.com/es/mx" class="mubi-button">MUBI</a>
+  </div>
+
+  <!-- Pie de página -->
+  <footer>
+    <div style="text-align: center;" class="footer-content">
+      <p>© 2023 New Cinema Labyrinth. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>

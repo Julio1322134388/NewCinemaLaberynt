@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Educación Cinematográfica</title>
+  <link rel="stylesheet" href="stylesedu.css">
+  <style>
+    /* Estilos específicos para la página aquí */
+    /* Justificar el texto */
+    p {
+      text-align: justify;
+    }
+  </style>
+</head>
+<!-- JavaScript para ocultar la barra de navegación al hacer scroll down -->
+<script>
+  let prevScrollPos = window.pageYOffset;
+
+  window.addEventListener('scroll', () => {
+    const currentScrollPos = window.pageYOffset;
+    const header = document.querySelector('header');
+
+    if (prevScrollPos > currentScrollPos) {
+      // El usuario está haciendo scroll hacia arriba, muestra el encabezado
+      header.style.top = "0"; // Muestra la barra de navegación
+    } else {
+      // El usuario está haciendo scroll hacia abajo, oculta el encabezado
+      header.style.top = "-80px"; // Oculta la barra de navegación (ajusta la altura según sea necesario)
+    }
+
+    prevScrollPos = currentScrollPos;
+  });
+</script>
+
+<body>
+  <!-- Encabezado -->
+  <header>
+    <a href="index.html"><img src="/images/Abstract-cinema-logo-vector-template-Graphics-19546476-1-580x386.png" alt="Logo de Educación Cinematográfica"></a>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="quees.html">¿Qué es el Cine?</a></li>
+        <li><a href="Evolucion.html">Evolución</a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="edu.html">Educación</a></li>
+        <li><a href="concept.html">Conceptos</a></li>
+        <li><a href="centra.html">Centralización</a></li>
+        <li><a href="cult.html">Cultura</a></li>
+        <li><a href="recom.html">Recomendaciones</a></li>
+        <li><a href="mex.html">cine Méxicano</a></li>
+        <li><a href="anina.html">Animacion</a></li>
+        <!-- Agrega enlaces a otras páginas aquí -->
+        <!-- Agregar enlaces a otras páginas aquí -->
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <div class="start">
+    <h1 style="font-size: xx-large;color: white;max-width: 800px;margin: 120px auto 0; padding: 20px 0 0; text-align: center;">Educación Cinematográfica</h1>
+    <p style="font-size: xx-large;color: white;max-width: 800px;margin: 20px auto 0; padding: 20px 0;">La educación cinematográfica es el proceso de aprender y apreciar la cinematografía como una forma de arte y comunicación. El cine es una forma de expresión artística que utiliza la combinación de imágenes en movimiento, sonido y narrativa para contar historias, transmitir emociones y comunicar ideas. La educación cinematográfica busca proporcionar a las personas las herramientas y el conocimiento necesarios para comprender y apreciar el cine en sus diversas formas y géneros.</p>
+    <p style="font-size: xx-large;color: white;max-width: 800px;margin: 20px auto 0; padding: 20px 0;">A través de la educación cinematográfica, se pueden explorar temas como la historia del cine, los diferentes géneros cinematográficos, la dirección de cine, la cinematografía, la edición, el sonido y la crítica cinematográfica. Esta educación puede llevarse a cabo a través de cursos académicos, talleres, proyecciones de películas y la participación activa en la comunidad cinematográfica.</p>
+    <p style="font-size: xx-large;color: white;max-width: 800px;margin: 20px auto 0; padding: 20px 0;">La educación cinematográfica no solo enriquece la comprensión del cine, sino que también fomenta la apreciación de esta forma de arte y la capacidad de analizar y evaluar películas de manera crítica. Además, puede inspirar a las personas a explorar sus propias habilidades cinematográficas y a contribuir al mundo del cine como creadores y cineastas.</p>
+  </div>
+
+  <!-- Pie de página -->
+  <footer>
+    <div style="text-align: center;" class="footer-content">
+      <p>© 2023 Educación Cinematográfica. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>

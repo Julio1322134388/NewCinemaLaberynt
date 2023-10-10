@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cultura del Cine</title>
+  <link rel="stylesheet" href="stylesedu.css">
+  <style>
+    /* Estilos específicos para la página aquí */
+    /* Justificar el texto */
+    p {
+      text-align: justify;
+    }
+  </style>
+</head>
+<!-- JavaScript para ocultar la barra de navegación al hacer scroll down -->
+<script>
+  let prevScrollPos = window.pageYOffset;
+
+  window.addEventListener('scroll', () => {
+    const currentScrollPos = window.pageYOffset;
+    const header = document.querySelector('header');
+
+    if (prevScrollPos > currentScrollPos) {
+      // El usuario está haciendo scroll hacia arriba, muestra el encabezado
+      header.style.top = "0"; // Muestra la barra de navegación
+    } else {
+      // El usuario está haciendo scroll hacia abajo, oculta el encabezado
+      header.style.top = "-80px"; // Oculta la barra de navegación (ajusta la altura según sea necesario)
+    }
+
+    prevScrollPos = currentScrollPos;
+  });
+</script>
+
+<body>
+  <!-- Encabezado -->
+  <header>
+    <a href="index.html"><img src="/images/Abstract-cinema-logo-vector-template-Graphics-19546476-1-580x386.png" alt="Logo de Cultura del Cine"></a>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="quees.html">¿Qué es el Cine?</a></li>
+        <li><a href="Evolucion.html">Evolución</a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="edu.html">Educación</a></li>
+        <li><a href="concept.html">Conceptos</a></li>
+        <li><a href="centra.html">Centralización</a></li>
+        <li class="current"><a href="cult.html">Cultura</a></li>
+        <li><a href="recom.html">Recomendaciones</a></li>
+        <li><a href="mex.html">Cine Mexicano</a></li>
+        <li><a href="anina.html">Animación</a></li>
+        <!-- Agregar enlaces a otras páginas aquí -->
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <div class="start">
+    <h1 style="font-size: xx-large;color: white;max-width: 800px;margin: 120px auto 0; padding: 20px 0 0; text-align: center;">Cultura del Cine</h1>
+    <p style="font-size: xx-large;color: white;max-width: 800px;margin: 20px auto 0; padding: 20px 0;">La cultura del cine abarca todas las manifestaciones culturales relacionadas con la cinematografía. Incluye aspectos como la apreciación del cine como arte, la participación en festivales de cine, la crítica cinematográfica y la influencia del cine en la sociedad y la cultura popular.</p>
+    <p style="font-size: xx-large;color: white;max-width: 800px;margin: 20px auto 0; padding: 20px 0;">La cultura del cine también se relaciona con la diversidad de géneros cinematográficos, la importancia de la representación en el cine y la exploración de diferentes perspectivas a través de las películas. A lo largo de la historia, el cine ha desempeñado un papel fundamental en la formación de la cultura contemporánea y ha sido una fuente de inspiración y reflexión para muchas personas.</p>
+    <p style="font-size: xx-large;color: white;max-width: 800px;margin: 20px auto 0; padding: 20px 0;">Explorar y promover la cultura del cine es esencial para enriquecer nuestra comprensión del mundo y fomentar la apreciación del cine como una forma de arte influyente y poderosa.</p>
+    <!-- Agregar más información sobre la cultura del cine aquí -->
+  </div>
+
+  <!-- Pie de página -->
+  <footer>
+    <div style="text-align: center;" class="footer-content">
+      <p>© 2023 Cultura del Cine. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>

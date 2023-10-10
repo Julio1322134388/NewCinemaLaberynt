@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historia de las Vanguardias</title>
+  <link rel="stylesheet" href="Stylesevo.css">
+  <style>
+    /* Estilos específicos para la página aquí */
+    /* Justificar el texto */
+    p {
+      text-align: justify;
+    }
+  </style>
+</head>
+<!-- JavaScript para ocultar la barra de navegación al hacer scroll down -->
+<script>
+  let prevScrollPos = window.pageYOffset;
+
+  window.addEventListener('scroll', () => {
+    const currentScrollPos = window.pageYOffset;
+    const header = document.querySelector('header');
+
+    if (prevScrollPos > currentScrollPos) {
+      // El usuario está haciendo scroll hacia arriba, muestra el encabezado
+      header.style.top = "0"; // Muestra la barra de navegación
+    } else {
+      // El usuario está haciendo scroll hacia abajo, oculta el encabezado
+      header.style.top = "-80px"; // Oculta la barra de navegación (ajusta la altura según sea necesario)
+    }
+
+    prevScrollPos = currentScrollPos;
+  });
+</script>
+
+<body>
+  <!-- Encabezado -->
+  <header>
+    <a href="index.html"><img src="/images/Abstract-cinema-logo-vector-template-Graphics-19546476-1-580x386.png" alt="Logo de New Cinema Labyrinth"></a>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="quees.html">¿Qué es el Cine?</a></li>
+        <li><a href="Evolucion.html">Evolución</a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="edu.html">Educación</a></li>
+        <li><a href="concept.html">Conceptos</a></li>
+        <li><a href="centra.html">Centralización</a></li>
+        <li><a href="cult.html">Cultura</a></li>
+        <li><a href="recom.html">Recomendaciones</a></li>
+        <li><a href="mex.html">cine Méxicano</a></li>
+        <li><a href="anina.html">Animacion</a></li>
+        <!-- Agregar enlaces a otras páginas aquí -->
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <div class="start">
+    <h1 style="font-size: xx-large;color: white;max-width: 800px;margin: 120px auto 0; padding: 20px 0 0;">Historia de las Vanguardias</h1>
+    <p style="font-size: xx-large;color: white;max-width: 800px;margin: 20px auto 0; padding: 20px 0;">
+      Las vanguardias artísticas marcaron una revolución en el mundo del arte y la cultura durante el siglo XX. Estos movimientos, que incluyen el futurismo, el dadaísmo, el cubismo y el surrealismo, buscaron desafiar las convenciones artísticas establecidas y explorar nuevas formas de expresión.
+    </p>
+    <ul>
+      <li style="font-size: xx-large;color: white;max-width: 800px;margin: 20px auto 0; padding: 20px 0;">
+        Futurismo: Surgido a principios del siglo XX, el futurismo celebró la velocidad, la tecnología y la modernidad. Artistas como Filippo Tommaso Marinetti escribieron el "Manifiesto Futurista", mientras que pintores como Umberto Boccioni crearon obras dinámicas que capturaban la energía de la era industrial.
+      </li>
+      <li style="font-size: xx-large;color: white;max-width: 800px;margin: 20px auto 0; padding: 20px 0;">
+        Dadaísmo: El dadaísmo, nacido durante la Primera Guerra Mundial, fue un movimiento de rechazo y protesta contra la lógica y la razón. Sus exponentes, como Marcel Duchamp y Tristan Tzara, produjeron obras y escritos absurdos y antiartísticos.
+      </li>
+    </ul>
+  </div>
+
+  <!-- Pie de página -->
+  <footer>
+    <div class="footer-content">
+      <p style=" text-align: center;">© 2023 New Cinema Labyrinth. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>

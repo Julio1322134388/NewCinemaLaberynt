@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cine Mexicano</title>
+  <link rel="stylesheet" href="stylesedu.css">
+  <style>
+    /* Estilos específicos para la página aquí */
+    /* Justificar el texto */
+    p {
+      text-align: justify;
+    }
+  </style>
+</head>
+<!-- JavaScript para ocultar la barra de navegación al hacer scroll down -->
+<script>
+  let prevScrollPos = window.pageYOffset;
+
+  window.addEventListener('scroll', () => {
+    const currentScrollPos = window.pageYOffset;
+    const header = document.querySelector('header');
+
+    if (prevScrollPos > currentScrollPos) {
+      // El usuario está haciendo scroll hacia arriba, muestra el encabezado
+      header.style.top = "0"; // Muestra la barra de navegación
+    } else {
+      // El usuario está haciendo scroll hacia abajo, oculta el encabezado
+      header.style.top = "-80px"; // Oculta la barra de navegación (ajusta la altura según sea necesario)
+    }
+
+    prevScrollPos = currentScrollPos;
+  });
+</script>
+
+<body>
+  <!-- Encabezado -->
+  <header>
+    <a href="index.html"><img src="/images/Abstract-cinema-logo-vector-template-Graphics-19546476-1-580x386.png" alt="Logo de Cine Mexicano"></a>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="quees.html">¿Qué es el Cine?</a></li>
+        <li><a href="Evolucion.html">Evolución</a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="edu.html">Educación</a></li>
+        <li><a href="concept.html">Conceptos</a></li>
+        <li><a href="centra.html">Centralización</a></li>
+        <li><a href="cult.html">Cultura</a></li>
+        <li><a href="recom.html">Recomendaciones</a></li>
+        <li class="current"><a href="mex.html">Cine Mexicano</a></li>
+        <li><a href="anina.html">Animación</a></li>
+        <!-- Agrega enlaces a otras páginas aquí -->
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <div class="start">
+    <h1 style="font-size: xx-large;color: white;max-width: 800px;margin: 120px auto 0; padding: 20px 0 0; text-align: center;">Cine Mexicano</h1>
+    <p style="font-size: xx-large;color: white;max-width: 800px;margin: 20px auto 0; padding: 20px 0;">El cine mexicano ha desempeñado un papel significativo en la industria cinematográfica global. Desde sus primeras películas hasta las producciones contemporáneas, el cine mexicano ha explorado una amplia gama de géneros, temas y estilos, y ha ganado reconocimiento internacional por su calidad artística y su contribución a la cultura cinematográfica.</p>
+    <p style="font-size: xx-large;color: white;max-width: 800px;margin: 20px auto 0; padding: 20px 0;">El cine mexicano ha producido obras maestras que han dejado huella en la historia del cine, como "Los olvidados" de Luis Buñuel, "Y tu mamá también" de Alfonso Cuarón y "Amores perros" de Alejandro González Iñárritu. Estas películas han sido aclamadas tanto a nivel nacional como internacional, y han contribuido a consolidar la reputación del cine mexicano en todo el mundo.</p>
+    <p style="font-size: xx-large;color: white;max-width: 800px;margin: 20px auto 0; padding: 20px 0;">Además de las películas de renombre, el cine mexicano también ha explorado temas sociales, políticos y culturales que reflejan la realidad y la identidad de México. A lo largo de los años, ha habido una diversidad de voces y enfoques en el cine mexicano, lo que ha enriquecido su paisaje cinematográfico y ha permitido contar historias únicas y diversas.</p>
+  </div>
+
+  <!-- Pie de página -->
+  <footer>
+    <div style="text-align: center;" class="footer-content">
+      <p>© 2023 Cine Mexicano. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>

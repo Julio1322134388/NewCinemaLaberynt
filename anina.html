@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animación y el Cine</title>
+  <link rel="stylesheet" href="stylesedu.css">
+  <style>
+    /* Estilos específicos para la página aquí */
+    /* Justificar el texto */
+    p {
+      text-align: justify;
+    }
+  </style>
+</head>
+<!-- JavaScript para ocultar la barra de navegación al hacer scroll down -->
+<script>
+  let prevScrollPos = window.pageYOffset;
+
+  window.addEventListener('scroll', () => {
+    const currentScrollPos = window.pageYOffset;
+    const header = document.querySelector('header');
+
+    if (prevScrollPos > currentScrollPos) {
+      // El usuario está haciendo scroll hacia arriba, muestra el encabezado
+      header.style.top = "0"; // Muestra la barra de navegación
+    } else {
+      // El usuario está haciendo scroll hacia abajo, oculta el encabezado
+      header.style.top = "-80px"; // Oculta la barra de navegación (ajusta la altura según sea necesario)
+    }
+
+    prevScrollPos = currentScrollPos;
+  });
+</script>
+
+<body>
+  <!-- Encabezado -->
+  <header>
+    <a href="index.html"><img src="/images/Abstract-cinema-logo-vector-template-Graphics-19546476-1-580x386.png" alt="Logo de Animación y el Cine"></a>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="quees.html">¿Qué es el Cine?</a></li>
+        <li><a href="Evolucion.html">Evolución</a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="edu.html">Educación</a></li>
+        <li><a href="concept.html">Conceptos</a></li>
+        <li><a href="centra.html">Centralización</a></li>
+        <li><a href="cult.html">Cultura</a></li>
+        <li><a href="recom.html">Recomendaciones</a></li>
+        <li><a href="mex.html">Cine Mexicano</a></li>
+        <li class="current"><a href="anina.html">Animación y el Cine</a></li>
+        <!-- Agrega enlaces a otras páginas aquí -->
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <div class="start">
+    <h1 style="font-size: xx-large;color: white;max-width: 800px;margin: 120px auto 0; padding: 20px 0 0; text-align: center;">Animación y el Cine</h1>
+    <p style="font-size: xx-large;color: white;max-width: 800px;margin: 20px auto 0; padding: 20px 0;">La animación es una forma única y fascinante de contar historias a través del cine. A diferencia de las películas de acción en vivo, la animación permite la creación de mundos imaginarios y personajes extraordinarios, brindando a los cineastas la libertad de dar vida a cualquier idea que puedan imaginar.</p>
+    <p style="font-size: xx-large;color: white;max-width: 800px;margin: 20px auto 0; padding: 20px 0;">La historia de la animación en el cine es rica y diversa, desde los primeros dibujos animados hasta las modernas películas de animación generadas por computadora. A lo largo de los años, la animación ha evolucionado en términos de técnica y narrativa, brindando al público de todas las edades historias conmovedoras, humor ingenioso y aventuras emocionantes.</p>
+    <p style="font-size: xx-large;color: white;max-width: 800px;margin: 20px auto 0; padding: 20px 0;">Algunas de las películas de animación más icónicas incluyen clásicos de Disney como "El Rey León" y "La Bella y la Bestia", así como obras maestras de Studio Ghibli como "El Viaje de Chihiro". Estas películas han dejado una huella indeleble en la historia del cine y han demostrado que la animación es un medio poderoso para contar historias significativas y conmovedoras.</p>
+  </div>
+
+  <!-- Pie de página -->
+  <footer>
+    <div style="text-align: center;" class="footer-content">
+      <p>© 2023 Animación y el Cine. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>

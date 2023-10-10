@@ -1,0 +1,83 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo para el encabezado */
+  header {
+    transition: transform 0.3s ease-in-out;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos en el espacio disponible */
+    align-items: center; /* Alinea verticalmente los elementos al centro */
+  }
+  /* Estilo para el logo en el encabezado */
+  header img {
+    max-height: 80px; /* Establece el tamaño máximo del logo */
+    margin-left: 20px; /* Agrega un margen izquierdo para separar el logo de la barra de navegación */
+  }
+  
+  /* Estilo para la barra de navegación */
+  .navbar ul {
+    display: flex;
+    justify-content:center; /* Alinea los enlaces al centro */
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    gap: 10px;
+    color: black; /* Cambia el color del texto de la barra de navegación a negro */
+    font-family: 'AR One Sans', sans-serif; /* Cambia el tipo de letra de los enlaces */
+  }
+  
+  .navbar ul li a {
+    color: black; /* Cambia el color de los enlaces a negro */
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #222; /* Cambia el color de fondo */
+    color: white; /* Cambia el color del texto */
+  }
+  
+  /* Estilo para el contenido principal */
+
+  .start {
+    background-image: url('/images/descargar.jpg');
+    background-size: cover; /* Hace que la imagen de fondo cubra toda la página */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    background-position: center top; /* Centra la imagen de fondo en la parte superior de la página */
+    text-align: justify;
+    padding: 120px 0 0; /* Agrega espacio al contenido principal para evitar que se superponga con la barra de navegación */
+  }
+  
+  
+  .start h1 {
+    font-size: 2em;
+  }
+  
+  .start p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  /* Estilo para la imagen relacionada */
+  .start img {
+    max-width: 100%;
+    display: block;
+    margin: 20px auto;
+  }
+  
+  /* Estilo para el pie de página */
+  footer {
+    background-color: #111; /* Cambia el color de fondo del pie de página */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+  

@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Cinema Labyrinth</title>
+  <link rel="stylesheet" href="Stylesevo.css">
+  <style>
+    /* Estilos específicos para la página aquí */
+    /* Justificar el texto */
+    p {
+      text-align: justify;
+    }
+  </style>
+</head>
+<!-- JavaScript para ocultar la barra de navegación al hacer scroll down -->
+<script>
+  let prevScrollPos = window.pageYOffset;
+
+  window.addEventListener('scroll', () => {
+    const currentScrollPos = window.pageYOffset;
+    const header = document.querySelector('header');
+
+    if (prevScrollPos > currentScrollPos) {
+      // El usuario está haciendo scroll hacia arriba, muestra el encabezado
+      header.style.top = "0"; // Muestra la barra de navegación
+    } else {
+      // El usuario está haciendo scroll hacia abajo, oculta el encabezado
+      header.style.top = "-80px"; // Oculta la barra de navegación (ajusta la altura según sea necesario)
+    }
+
+    prevScrollPos = currentScrollPos;
+  });
+</script>
+
+<body>
+  <!-- Encabezado -->
+  <header>
+    <a href="index.html"><img src="/images/Abstract-cinema-logo-vector-template-Graphics-19546476-1-580x386.png" alt="Logo de New Cinema Labyrinth"></a>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="quees.html">¿Qué es el Cine?</a></li>
+        <li><a href="Evolucion.html">Evolución</a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="edu.html">Educación</a></li>
+        <li><a href="concept.html">Conceptos</a></li>
+        <li><a href="centra.html">Centralización</a></li>
+        <li><a href="cult.html">Cultura</a></li>
+        <li><a href="recom.html">Recomendaciones</a></li>
+        <li><a href="mex.html">cine Méxicano</a></li>
+        <li><a href="anina.html">Animacion</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <div class="start">
+    <h1 style="font-size: xx-large;color: white;max-width: 800px;margin: 120px auto 0; padding: 20px 0 0;">Evolucion del cine</h1>
+    <p style="font-size: xx-large;color: white;max-width: 800px;margin: 20px auto 0; padding: 20px 0;">La evolución del cine es una historia fascinante que abarca más de un siglo. Aquí te presento una visión general de las principales etapas y desarrollos en la evolución del cine:
+    </p>
+    <img src="/images/praxinoscopio.gif" alt="Imagen 1">
+    <br>
+    <ul>
+      <li style="font-size: xx-large;color: white;max-width: 800px;margin: 20px auto 0; padding: 20px 0;">Primeras Proyecciones (finales del siglo XIX): La historia del cine comenzó con inventores y científicos que experimentaron con la proyección de imágenes en movimiento. Los hermanos Lumière realizaron algunas de las primeras proyecciones públicas en 1895.
+        </li>
+        <li style="font-size: xx-large;color: white;max-width: 800px;margin: 20px auto 0; padding: 20px 0;"> Cine Mudo (Décadas de 1900-1920): En esta era, las películas eran mudas, lo que significa que no tenían sonido sincronizado. Las películas mudas a menudo se acompañaban de música en vivo o efectos de sonido producidos en el teatro. Grandes directores como Charlie Chaplin y Buster Keaton emergieron en esta época.
+          </li>
+          <img src="/images/cineveo2.gif" alt="imagen2">
+          <li style="font-size: xx-large;color: white;max-width: 800px;margin: 20px auto 0; padding: 20px 0;"> 
+          Cine Sonoro (Década de 1920): La llegada del sonido sincronizado revolucionó la industria del cine. "El cantante de jazz" (1927) fue una de las primeras películas sonoras importantes. Este avance permitió a las películas contar historias de manera más realista y abrir nuevas posibilidades creativas.
+          </li>
+          <li style="font-size: xx-large;color: white;max-width: 800px;margin: 20px auto 0; padding: 20px 0;">
+          Época de Oro de Hollywood (Décadas de 1930-1950): Durante este período, Hollywood se convirtió en el epicentro mundial del cine. Se produjeron películas icónicas y se establecieron grandes estudios cinematográficos. Estrellas como Clark Gable, Marilyn Monroe y Humphrey Bogart se convirtieron en íconos del cine.
+          </li>
+    </ul>
+    <p style="font-size: xx-large;color: white;max-width: 800px;margin: 20px auto 0; padding: 20px 0;">El cine abarca una amplia variedad de géneros, estilos y formas, desde películas de ficción hasta documentales, animaciones, películas experimentales y mucho más. Es una de las formas más influyentes de arte y entretenimiento en la cultura contemporánea, con una capacidad única para llegar a audiencias de todo el mundo y transmitir mensajes poderosos a través de la combinación de imágenes y sonido. El cine ha sido una parte fundamental de la industria del entretenimiento y la cultura popular durante más de un siglo.</p>
+    <!-- Agregar una imagen relacionada -->
+    <img src="/images/endf.jpg" alt="Imagen 1">
+  </div>
+
+  <!-- Pie de página -->
+  <footer>
+    <div style="text-align: center;" class="footer-content">
+      <p style="text-align: center;">© 2023 New Cinema Labyrinth. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
+
